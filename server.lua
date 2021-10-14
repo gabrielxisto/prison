@@ -5,7 +5,7 @@ vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
 
 src = {}
-Tunnel.bindInterface("vrp_prison",src)
+Tunnel.bindInterface("prison",src)
 
 vRP.prepare("vRP/checkid", "SELECT user_id FROM vrp_prisao WHERE user_id = @user_id")
 vRP.prepare("vRP/checktime", "SELECT tempo FROM vrp_prisao WHERE tempo = @tempo")
